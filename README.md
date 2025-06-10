@@ -14,3 +14,12 @@ If you wish to use this package in a commercial product or distribute modified v
 This project may include third-party libraries or components that are subject to their own licenses. Please refer to their respective license files if applicable.
 
 # 快速上手
+
+## XXXTemplateEnum
+
+- 更灵活的枚举类型（自定义字符串）
+
+## ScriptableObject形式的数据库
+
+- 包含数据实例化以及储存数据库
+- 附带组件数据形式范例

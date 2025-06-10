@@ -1,8 +1,6 @@
 {
   "name": "LymeGame.Template.Runtime",
-  "rootNamespace": "",
-  "references": [
-  ],
+  "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
