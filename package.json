@@ -1,0 +1,13 @@
+{
+    "name": "com.eatjune.templateutils",
+    "displayName": "Template Utils",
+    "version": "0.0.1",
+    "unity": "2022.3",
+    "unityRelease": "40f1",
+    "description": "代码模板",
+    "keywords": ["Package","Unity"],
+    "author": "EatJune",
+    "dependencies":{
+    },
+    "samples": []
+}
