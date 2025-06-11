@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "LymeGame/Resource/ItemData", fileName = "ItemData")]
-public class ItemData : ScriptableObject {
+[CreateAssetMenu(menuName = "LymeGame/SOData/SOTemplateData", fileName = "SOTemplateData")]
+public class SOTemplateData : ScriptableObject {
 	[SerializeField]
 	private string m_id;
 
@@ -20,12 +20,12 @@ public class ItemData : ScriptableObject {
 
 	public Sprite Icon;
 
-	public ItemComData[] ItemComData;
+	public SOTemplateData_ComData[] ItemComData;
 
 	/// <summary>
 	/// 获取组件数据
 	/// </summary>
-	public T GetComponent<T>() where T : ItemComData {
+	public T GetComponent<T>() where T : SOTemplateData_ComData {
 		foreach (var itemComData in ItemComData) {
 			if (itemComData is T data) {
 				return data;
@@ -38,7 +38,7 @@ public class ItemData : ScriptableObject {
 	/// <summary>
 	/// 获取所有组件数据
 	/// </summary>
-	public T[] GetComponents<T>() where T : ItemComData {
+	public T[] GetComponents<T>() where T : SOTemplateData_ComData {
 		var list = new List<T>();
 		foreach (var itemComData in ItemComData) {
 			if (itemComData is T data) {
@@ -50,12 +50,12 @@ public class ItemData : ScriptableObject {
 	}
 
 	/// <summary>
-	/// 实例化该scriptableObject
+	/// 实例化该ScriptableObject
 	/// </summary>
-	public ItemData GetInstance() {
+	public SOTemplateData GetInstance() {
 		var obj = Instantiate(this);
 		obj.name = this.name;
-		var coms = new List<ItemComData>();
+		var coms = new List<SOTemplateData_ComData>();
 		foreach (var itemComData in ItemComData) {
 			coms.Add(itemComData.GetInstance(obj));
 		}
