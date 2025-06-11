@@ -10,8 +10,5 @@
     "Unity"
   ],
   "author": "EatJune",
-  "dependencies": {
-    "com.eatjune.commonutils": "https://github.com/Eatjune/lyme_common_utils.git"
-  },
   "samples": []
 }
