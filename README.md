@@ -15,6 +15,8 @@ This project may include third-party libraries or components that are subject to
 
 # 快速上手
 
+- <b>模板不使用名空间，请自己命名</b>
+
 ## XXXTemplateEnum
 
 - 更灵活的枚举类型（自定义字符串）
